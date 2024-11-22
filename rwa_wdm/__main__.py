@@ -17,6 +17,8 @@ from . import simulator
 from .util import validate_args
 
 logger = logging.getLogger(__name__)
+os.environ['TMPDIR'] = '/path/to/custom/tempdir'
+
 TEMP_DIR = os.path.join(tempfile.gettempdir(), 'rwa_results')
 
 
